@@ -61,14 +61,14 @@ if __name__ == '__main__':
                   metrics=['accuracy'])
     #
     #
-    # print('-- Training --')
-    # history = model.fit(X_train,
-    #                     y_train,
-    #                     verbose=1,
-    #                     batch_size=batch_size,
-    #                     nb_epoch=epochs,
-    #                     validation_split=0.1,
-    #                     shuffle=False)
+    print('-- Training --')
+    history = model.fit(X_train,
+                        y_train,
+                        verbose=1,
+                        batch_size=batch_size,
+                        nb_epoch=epochs,
+                        validation_split=0.1,
+                        shuffle=False)
 
     print('-- Evaluating --')
     eval_loss = model.evaluate(X_test, y_test, batch_size=batch_size, verbose=0)
