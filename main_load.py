@@ -26,7 +26,7 @@ if __name__ == '__main__':
     model.load_weights('model/weights_3_layer.h5')
 
     # print('-- Creating Model--')
-    # batch_size = 96
+    batch_size = 96
     # epochs = 100
     # out_neurons = 1
     # hidden_neurons = 500
