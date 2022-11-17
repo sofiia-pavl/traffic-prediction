@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     print('-- Creating Model--')
     batch_size = 96
-    epochs = 15
+    epochs = 25
     out_neurons = 1
     hidden_neurons = 500
     hidden_inner_factor = uniform(0.1, 1.1)
